@@ -24,8 +24,14 @@ mongoose
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 
-  // Use Routes
-  app.get('/', (req, res) => res.send('Hello Econ Club'));
+// Use Routes
+app.use('/', require('./src/routes/homeRoute'));
+app.use('/', require('./src/routes/aboutRoute'));
+app.use('/', require('./src/routes/blogsRoute'));
+app.use('/', require('./src/routes/contactsRoute'));
+app.use('/', require('./src/routes/eventsRoute'));
+app.use('/', require('./src/routes/executiveCommitteRoute'));
+app.use('/', require('./src/routes/moderatorsRoute'));
 
 const port = process.env.PORT || 5000;
 
