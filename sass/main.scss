@@ -1,11 +1,11 @@
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@import "abstracts/_functions";
+@import "abstracts/_mixins";
+@import "abstracts/_variables";
 
-@import "base/animations";
-@import "base/base";
+@import "base/_animations";
+@import "base/_base";
 @import "base/typography";
-@import "base/utilities";
+@import "base/_utilities";
 
 // @import "components/bg-video";
 // @import "components/button";
@@ -16,10 +16,10 @@
 // @import "components/popup";
 // @import "components/story";
 
-@import "layout/footer";
-@import "layout/grid";
-@import "layout/header";
-@import "layout/navigation";
+@import "layout/_footer";
+@import "layout/_grid";
+@import "layout/_header";
+@import "layout/_navigation";
 
-@import "pages/home";
+@import "pages/_home";
 
