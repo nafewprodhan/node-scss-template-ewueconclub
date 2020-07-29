@@ -6,7 +6,6 @@
   "scripts": {
     "server": "nodemon app.js",
     "watch:sass": "node-sass sass/main.scss public/css/style.css -w",
-    "devserver": "live-server",
     "start": "npm-run-all --parallel server watch:sass",
     "compile:sass": "node-sass sass/main.scss piblic/css/style.comp.css",
     "concat:css": "concat -o css/style.concat.css public/css/icon-font.css public/css/style.comp.css",
@@ -25,12 +24,15 @@
   },
   "homepage": "https://github.com/nafewprodhan/ewueconclub#readme",
   "dependencies": {
+    "@popperjs/core": "^2.4.4",
     "bootstrap": "^4.5.0",
     "config": "^3.3.1",
     "ejs": "^3.1.3",
     "express": "^4.17.1",
     "font-awesome": "^4.7.0",
-    "mongoose": "^5.9.24"
+    "jquery": "^3.5.1",
+    "mongoose": "^5.9.24",
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.5",
