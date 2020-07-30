@@ -2,6 +2,15 @@
 <script src="/popper.js/dist/popper.min.js"></script>
 <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
 
+
+<script>
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $(".navbar-dark");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
+ </script>
 </body>
 
 </html>

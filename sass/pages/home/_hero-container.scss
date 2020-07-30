@@ -1,0 +1,69 @@
+.header div.container {
+    height: 70rem !important;
+}
+
+.header {
+    height: 70rem;
+    background-image: linear-gradient(to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)),
+    url("/assets/css-img/home/background.jpg");
+    background-position: center;
+    background-size: cover;
+
+    clip-path: polygon(0 0, 100% 0, 100% 60rem, 0 100%);
+    position: relative;
+
+    .text-box-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-top: 80rem;
+        padding-right: 0.2rem;
+        top: 45%;
+        transform: translate(0, -50%);
+    }
+
+    &__text-box {
+        // left: 50%;
+        width: 30rem;
+        margin-bottom: 15rem;
+        z-index: 100;
+    }
+}
+
+// @media (max-width: 756px) {
+//     .text-box-container {
+//         position: absolute;
+//         left: 50%;
+//         transform: translate(-50%);
+//     }
+// }
+
+@media (max-width: 992px) {
+    .text-box-container {
+        flex-direction: column !important;
+    }
+}
+
+@media (min-width: 540px) {
+    .header {
+
+        &__text-box {
+            width: 35rem;
+        }
+    }
+}
+
+
+@media (min-width: 756px) {
+    .header {
+
+        &__text-box {
+            width: 49rem;
+        }
+    }
+}

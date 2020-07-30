@@ -1,0 +1,41 @@
+.upcoming-event-container {
+    width: 25rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 15rem;
+
+    &--box {
+        width: 21rem;
+        background-color: #ffffff;
+        height: 11rem;
+        border-radius: 5px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+
+        &--a {
+            position: absolute;
+            bottom: -13px;
+            left: 50%;
+            width: 100%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            text-decoration: none;
+            color:#ffffff;
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 0.4rem 2.5rem;
+            background-color: $color-primary-dark;
+            border-radius: 4px;
+
+            &:hover {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}

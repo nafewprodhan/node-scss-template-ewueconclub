@@ -1,13 +1,23 @@
 .navbar-customization {
-    background-color: $navigation-bg-color;
     color: $navigation-text-color;
     padding: 0 1rem;
     overflow: hidden;
+    z-index: 10000;
+}
+
+.navbar-dark {
+    background-color: transparent;
+}
+
+.navbar-dark.scrolled {
+    background-color: #10ac84 !important;
+    transition: background-color 500ms linear;
+    box-shadow: 1px 1px 5px rgba(122, 122, 122, 0.671);
 }
 
 .navbar-logo {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 span.navbar-toggler-icon {
@@ -27,7 +37,7 @@ span.navbar-toggler-icon {
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 500;
-    padding: 1.3rem 0;
+    padding: 1.5rem 0;
     transition: all .2s cubic-bezier(0.42, 0.15, 0.22, 0.96);
 }
 
@@ -47,9 +57,10 @@ span.navbar-toggler-icon {
 }
 
 .last-element {
-    background-color: #ffffff;
-    color: $navigation-bg-color;
+    color: #ffffff;
+    background-color: $navigation-bg-color;
     text-decoration: none;
+    font-weight: bold;
     font-size: 1.3rem;
     font-weight: bold;
     padding: 0.8rem 1.5rem;
@@ -58,10 +69,9 @@ span.navbar-toggler-icon {
     transition: all .2s ease-in;
 
     &:hover {
-        color: #ffffff;
-        background-color: $navigation-bg-color;
+        background-color: transparent;
         text-decoration: none;
-        font-weight: bold;
+        color: white;
     }
 }
 

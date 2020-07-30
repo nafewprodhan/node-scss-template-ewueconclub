@@ -2,13 +2,29 @@
 </head>
 
 <body>
-   <header>
-      <%- include('includes/navigation.ejs') %>
-   </header>
-   <div>
+   <%- include('includes/navigation.ejs') %>
+   <header class="header">
       <div class="container">
-         <!-- <h1>from views home</h1> -->
+         <div class="text-box-container">
+            <div class="header__text-box">
+               <h1 class="heading-primary">
+                     <span class="heading-primary--main">EWU economics club</span>
+                     <span class="heading-primary--sub">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic ratione sapiente aliquid pariatur beatae recusandae</span>
+               </h1>
+      
+               <a href="#" class="btn btn--white btn--animated"><span class="fa fa-user-plus"></span> Become a Member</a>
+            </div>
+            <div class="upcoming-event-container">
+               <div class="upcoming-event-container--box">
+               </div>
+               <div id="timer"></div>
+               <a class="upcoming-event-container--box--a" href=""><span class="fa fa-calendar"></span> Upcoming event</a>
+            </div>
+         </div>
       </div>
-   </div>
+   </header>
 
+   
+
+   <script src="/assets/js/clock.js"></script>
 <%- include('includes/end.ejs') %>

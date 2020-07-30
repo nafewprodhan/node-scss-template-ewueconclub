@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900');
+
+$font: 'Lato', sans-serif;
+$big: 'Montserrat', sans-serif;
+
+$red: #ffffff;
+$white: #ffffff;
+$blue: #ffffff;
+$dark: #095f42;
+$yellow: #ffffff;
+
+#timer {
+  position: absolute;
+  width: 100%;
+  top: 23px;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: $dark;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font;
+  font-weight: 900;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  z-index: 10000;
+}
+
+
+.days, .hours, .minutes, .seconds {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 2px;
+  // width: 100px;
+  border-radius: 5px;
+}
+
+.days {
+  background: $red;
+}
+
+.hours {
+  background: $white;
+}
+
+.minutes {
+  background: $blue;
+}
+
+.seconds {
+  background: $yellow;
+  .numbers {
+  }
+}
+
+.numbers {
+  font-family: $big;
+  color: $dark;
+  font-size: 2rem;
+}
