@@ -1,7 +1,7 @@
 .navbar-customization {
     color: $navigation-text-color;
     padding: 0 1rem;
-    overflow: hidden;
+    // overflow: hidden;
     z-index: 10000;
 }
 
@@ -10,9 +10,9 @@
 }
 
 .navbar-dark.scrolled {
-    background-color: #10ac84 !important;
+    background-color: $color-primary-dark !important;
     transition: background-color 500ms linear;
-    box-shadow: 1px 1px 5px rgba(122, 122, 122, 0.671);
+    box-shadow: 1px 1px 5px #141414e3;
 }
 
 .navbar-logo {
@@ -30,6 +30,27 @@ span.navbar-toggler-icon {
     &:last-child {
         padding-right: 0;
     }
+}
+
+.cs-nav-link-dropdown {
+    padding: 0 !important;
+    color: $navigation-text-color !important;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.dropdown-menu {
+    color: $navigation-text-color !important;
+    font-weight: 700 !important;
+    font-size: 1.3rem;
+    background-color: $color-primary-dark;
+    z-index: 1000000;
+    text-align: center;
+}
+
+.dropdown-item {
+    color: #ffffff;
 }
 
 .cs-nav-link {
@@ -58,7 +79,7 @@ span.navbar-toggler-icon {
 
 .last-element {
     color: #ffffff;
-    background-color: $navigation-bg-color;
+    background-color: transparent;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.3rem;
@@ -76,6 +97,11 @@ span.navbar-toggler-icon {
 }
 
 @media (max-width: 576px) {
+
+    ul.nav-items {
+        padding: 2rem 0;
+    }
+
     li.nav-item {
         width: 100%;
         text-align: center;
@@ -86,6 +112,6 @@ span.navbar-toggler-icon {
         border-bottom: none;
         padding: 1.2rem 10rem;
         border-radius: 4px;
-        background-color: #3741fa75;
+        background-color: $color-primary-light;
     }
 }

@@ -6,7 +6,7 @@ $big: 'Montserrat', sans-serif;
 $red: #ffffff;
 $white: #ffffff;
 $blue: #ffffff;
-$dark: #095f42;
+$dark: $color-primary-dark;
 $yellow: #ffffff;
 
 #timer {
@@ -21,15 +21,12 @@ $yellow: #ffffff;
   text-transform: uppercase;
   font-family: $font;
   font-weight: 900;
-  font-size: 0.8rem;
   letter-spacing: 2px;
-  z-index: 10000;
 }
-
 
 .days, .hours, .minutes, .seconds {
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   padding: 2px;
   // width: 100px;
   border-radius: 5px;

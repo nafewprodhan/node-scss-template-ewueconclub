@@ -1,5 +1,5 @@
 .upcoming-event-container {
-    width: 25rem;
+    width: 27rem;
     background-color: transparent;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
     margin-bottom: 15rem;
 
     &--box {
-        width: 21rem;
+        width: 24rem;
         background-color: #ffffff;
         height: 11rem;
         border-radius: 5px;
@@ -31,6 +31,7 @@
             padding: 0.4rem 2.5rem;
             background-color: $color-primary-dark;
             border-radius: 4px;
+            box-shadow: 1px 1px 8px rgba(10, 10, 10, 0.774);
 
             &:hover {
                 text-decoration: none;

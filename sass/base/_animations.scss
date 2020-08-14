@@ -42,3 +42,22 @@
         transform: translate(0);
     }
 }
+
+@-webkit-keyframes rotate {
+    from {
+      background-position: -500px;
+    }
+    to { 
+      background-position: 0px;
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      background-position: -500px;
+    }
+    to { 
+      background-position: 0px;
+    }
+  }
+  

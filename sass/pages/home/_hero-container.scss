@@ -1,17 +1,24 @@
 .header div.container {
-    height: 70rem !important;
+    height: 65rem !important;
 }
 
 .header {
-    height: 70rem;
+    height: 65rem;
+    // background: #0f0c29;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     background-image: linear-gradient(to right bottom,
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)),
+        rgba($color-primary-light, 0.5),
+        rgba($color-primary-middle,0.6),
+        rgba($color-primary-dark, 0.5)),
     url("/assets/css-img/home/background.jpg");
     background-position: center;
     background-size: cover;
 
-    clip-path: polygon(0 0, 100% 0, 100% 60rem, 0 100%);
+    // clip-path: polygon(0 0, 100% 0, 100% 55rem, 0 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);
+    // clip-path: polygon(100% 0, 100% 100%, 80% 90%, 50% 100%, 20% 90%, 0 100%, 0 0);
     position: relative;
 
     .text-box-container {
@@ -21,8 +28,7 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        padding-top: 80rem;
-        padding-right: 0.2rem;
+        padding-top: 75rem;
         top: 45%;
         transform: translate(0, -50%);
     }
@@ -61,6 +67,7 @@
 
 @media (min-width: 756px) {
     .header {
+        clip-path: polygon(100% 0, 100% 100%, 80% 90%, 50% 100%, 20% 90%, 0 100%, 0 0) !important;
 
         &__text-box {
             width: 49rem;

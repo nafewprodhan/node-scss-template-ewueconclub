@@ -10,6 +10,7 @@
 // @import "components/bg-video";
 @import "components/button";
 @import "components/clock";
+@import "components/line-chart";
 // @import "components/card";
 // @import "components/composition";
 // @import "components/feature-box";
@@ -26,3 +27,8 @@
 //home
 @import "pages/home/hero-container";
 @import "pages/home/upcoming-event";
+@import "pages/home/event-section";
+@import "pages/home/task-counter-section";
+@import "pages/home/testimonials";
+@import "pages/home/event-card-section";
+@import "pages/home/gallery-section";
