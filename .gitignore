@@ -1,7 +1,2 @@
 node_modules
 config/keys
-public/@popperjs
-public/bootstrap
-public/font-awesome
-public/jquery
-public/popper.js
