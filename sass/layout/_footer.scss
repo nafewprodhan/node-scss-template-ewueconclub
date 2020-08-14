@@ -138,8 +138,8 @@
     outline: none;
 }
 
-.margin-bottom-little {
-    margin-bottom: 1rem;
+.margin-bottom-all {
+    margin-bottom: 3rem;
 }
 
 .footer-links-container {
@@ -179,9 +179,16 @@
 .copyright-container {
     width: 100%;
     padding: 2rem 0;
+    text-align: center;
     background-color: $color-primary-dark;
 }
 
 .copyright-text {
     font-size: 1.5rem;
+}
+
+@media (max-width: 576px) {
+    .copyright-text {
+        font-size: 1.2rem;
+    }
 }

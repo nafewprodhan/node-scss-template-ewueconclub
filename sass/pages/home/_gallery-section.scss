@@ -95,3 +95,10 @@
         display: block;
     }
 }
+
+@media (max-width: 576px) {
+    .gallery {
+        grid-gap: 0.6rem;
+        padding: 0.5rem;
+    }
+}
