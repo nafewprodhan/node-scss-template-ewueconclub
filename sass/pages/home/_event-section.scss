@@ -67,7 +67,7 @@
 
             &--description {
                 font-size: 1.8rem;
-                line-height: 1.2;
+                line-height: 1.5;
                 text-align: justify;
                 color: #302f2f;
             }
@@ -118,6 +118,20 @@
 
 @media (max-width: 576px) {
     .upcoming-event-details-container {
-        
+
+        &--about {
+
+            &--flex {
+
+                &--title {
+                    font-size: 1.9rem !important;
+                }
+
+                &--description {
+                    font-size: 1.5rem !important;
+                }
+
+            }
+        }
     }
 }

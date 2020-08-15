@@ -22,7 +22,7 @@
 
 .footer-hr {
     margin-top: 10px;
-    height: 5px;
+    height: 4px;
     width: 90%;
     background-color: #ebe8fd;
 }
@@ -188,6 +188,15 @@
 }
 
 @media (max-width: 576px) {
+
+    .footer-hr {
+        width: 100%;
+    }
+
+    .newsletter-form-container {
+        width: 100%;
+    }
+
     .copyright-text {
         font-size: 1.2rem;
     }
