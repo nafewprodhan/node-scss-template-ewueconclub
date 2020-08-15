@@ -57,7 +57,7 @@ html {
   overflow-x: hidden !important; }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   background-color: #ffffffd8;
@@ -364,6 +364,10 @@ body {
   transition: background-color 500ms linear;
   box-shadow: 1px 1px 5px #141414e3; }
 
+.others-nav-bg {
+  background-color: #0f0c29 !important;
+  box-shadow: 1px 1px 5px #141414e3; }
+
 .navbar-logo {
   width: 5rem;
   height: 5rem; }
@@ -575,7 +579,7 @@ span.navbar-toggler-icon {
         font-size: 1.8rem;
         line-height: 1.5;
         text-align: justify;
-        color: #302f2f; }
+        color: #545454; }
       .upcoming-event-details-container--about--flex--see-details {
         position: absolute;
         bottom: 0;
@@ -1177,3 +1181,99 @@ span.navbar-toggler-icon {
   .gallery {
     grid-gap: 0.6rem;
     padding: 0.5rem; } }
+
+.page-header-section {
+  width: 100%;
+  height: 25rem;
+  background-image: linear-gradient(to right bottom, rgba(36, 36, 62, 0.7), rgba(35, 31, 85, 0.7), rgba(15, 12, 41, 0.7)), url("/assets/css-img/home/counter-connected-world-bg-img.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+
+.page-header-position {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.page-title {
+  color: white;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 4px;
+  word-spacing: 5px;
+  font-weight: 700; }
+
+.our-story-section {
+  margin-top: 4rem;
+  margin-bottom: 5rem; }
+
+.story-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.our-story-text {
+  width: 70%;
+  font-size: 2rem;
+  color: #545454;
+  line-height: 1.4; }
+
+.img-story {
+  width: 200px;
+  height: auto; }
+
+.moments-carousel-section {
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
+
+.carousel-img-height {
+  height: 550px; }
+
+@media (max-width: 756px) {
+  .story-container {
+    flex-direction: column; }
+  .our-story-text {
+    width: 100%; } }
+
+@media (max-width: 540px) {
+  .our-story-text {
+    font-size: 1.8rem; }
+  .img-story {
+    width: 80%;
+    height: auto; }
+  .page-title {
+    font-size: 2.4rem; } }
+
+.align-header-left {
+  margin: 0 !important; }
+
+.mission-about-section {
+  padding: 4rem 0;
+  background: #073881; }
+
+.text-white {
+  color: white; }
+
+.img-ml-zero {
+  margin-left: 0 !important; }
+
+.vision-about-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+
+.large-img {
+  width: 100% !important;
+  height: auto; }
+
+.objectives-values-about-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: #4c0ebe; }
+
+.w100 {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important; }

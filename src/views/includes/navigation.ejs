@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark navbar-customization navbar-expand-sm fixed-top">
+<nav class="navbar navbar-dark navbar-customization navbar-expand-sm fixed-top <%= path !== '/' ? 'others-nav-bg' : '' %>">
     <div class="container">
         <a class="navbar-brand mr-auto" href="#"><img src="/assets/logo/ewu-econ-club-logo.png" class="navbar-logo" alt="ewu-econ-club-logo" srcset=""></a>
         <button class="navbar-toggler nav-toggler-btn" type="button" data-toggle="collapse"                 data-target="#Navbar">
@@ -7,8 +7,8 @@
         
         <div class="collapse navbar-collapse" id="Navbar">
             <ul class="navbar-nav nav-items ml-auto">
-                <li class="nav-item"><a class="<%= path === '/' ? 'active' : '' %> cs-nav-link" href="#">HOME</a></li>
-                <li class="nav-item"><a class="cs-nav-link" href="#">ABOUT</a></li>
+                <li class="nav-item"><a class="<%= path === '/' ? 'active' : '' %> cs-nav-link" href="/">HOME</a></li>
+                <li class="nav-item"><a class="<%= path === '/about' ? 'active' : '' %> cs-nav-link" href="/about">ABOUT</a></li>
                 <li class="nav-item"><a class="cs-nav-link" href="#">EVENTS</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link cs-nav-link-dropdown dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
