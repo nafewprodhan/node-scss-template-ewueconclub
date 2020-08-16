@@ -1,0 +1,25 @@
+<%- include('includes/head.ejs') %>
+</head>
+
+<body>
+    <%- include('includes/navigation.ejs') %>
+
+    <section class="page-header-section">
+        <div class="page-header-position">
+            <h1 class="page-title">Contact us</h1>
+        </div>
+    </section>
+
+    <section class="contact-form-section-send">
+        <div class="container">
+            <div class="alert alert-warning alert-config alert-dismissible fade show m-auto" role="alert">
+                <%= msg %>
+                <button type="button" class="close alert-config" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true" class="alert-config">&times;</span>
+                </button>
+            </div>
+        </div>
+    </section>
+                        
+    <%- include('includes/end.ejs') %>
+

@@ -2,8 +2,10 @@ const express = require("express");
 
 const router = express.Router();
 
-router.get('/contact', (req, res) => {
-    res.send("contact")
-});
+const contactController = require("../controllers/contactsController");
+
+router.get('/contact', contactController.getContactPage);
+
+router.post('/contact/send', contactController.postContactPage)
 
 module.exports = router;
